@@ -1,6 +1,6 @@
-# My-Portfolio
+
 A modern personal portfolio showcasing projects, skills, and experience.
-# Saniya Malik's Portfolio Website
+# Portfolio Website
 
 A modern, dark-themed personal portfolio built using **HTML, CSS, and JavaScript**.  
 This website highlights my projects, skills, and experience with a clean and professional UI.
