@@ -2,141 +2,223 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Saniya Malik — Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saniya Malik A · CS Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Professional fonts: Inter & SF Mono style -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
-
 <body>
 
-  <!-- TOPBAR -->
-  <header class="topbar">
-    <div class="brand">Saniya Malik</div>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">Saniya Malik A<span>.</span></div>
     <nav class="nav">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
+      <a href="#contact" class="nav-cta">Contact</a>
     </nav>
-  </header>
+    <button class="menu-toggle" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
 
-  <main>
-
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-left">
-
-        <h1 class="title">Crafting clean & smooth <span class="accent">digital experiences</span></h1>
-        <p class="lead">Building smooth, modern, and meaningful digital solutions.</p>
-
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-tag"><span class="dot"></span> 3rd year · CS & Business Systems</div>
+        <h1 class="title">Saniya<br><em>Malik</em></h1>
+        <p class="lead">Computer Science & Business Systems student at S.G. Balekundri Institute of Technology, Belgaum. Exploring machine learning, building AI systems, and solving real-world problems with code.</p>
         <div class="cta-row">
-          <a class="btn primary" href="#projects">View projects</a>
-          <a class="btn ghost" href="resume.pdf" download>Download CV</a>
+          <a href="#projects" class="btn btn-primary">Explore work →</a>
+          <a href="resume.pdf" class="btn btn-outline" download>Download CV</a>
         </div>
-
-        <div class="contact-links">
-          <a class="link" href="https://github.com/saniya-malik" target="_blank">GitHub</a>
-          <a class="link" href="https://www.linkedin.com/in/saniya-malik-75aa882bb" target="_blank">LinkedIn</a>
+        <div class="hero-links">
+          <a href="https://github.com/saniya-malik" target="_blank" class="hero-link"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%233b4252'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.21.68-.48 0-.24-.01-.88-.01-1.72-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.8-.22 1.65-.33 2.5-.33.85 0 1.7.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.18.58.69.48C19.13 20.17 22 16.42 22 12c0-5.52-4.48-10-10-10z'/%3E%3C/svg%3E" alt="GitHub"> GitHub</a>
+          <a href="https://www.linkedin.com/in/saniya-malik-75aa882bb" target="_blank" class="hero-link"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%233b4252'%3E%3Cpath d='M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3c0-1.8-.7-2.9-2.2-2.9-1 0-1.5.6-1.8 1.2v-1h-2v8h2v-4.5c0-.8.2-1.5 1.1-1.5.8 0 1.1.6 1.1 1.5v4.5h2M7 8.7c.8 0 1.4-.6 1.4-1.4 0-.8-.6-1.4-1.4-1.4-.8 0-1.4.6-1.4 1.4 0 .8.6 1.4 1.4 1.4M6 10h2v8H6v-8z'/%3E%3C/svg%3E" alt="LinkedIn"> LinkedIn</a>
+          <a href="mailto:saniyamalik25@gmail.com" class="hero-link"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%233b4252'%3E%3Cpath d='M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z'/%3E%3C/svg%3E" alt="Email"> saniyamalik2507@gmail.com</a>
         </div>
-
       </div>
-
-      <!-- SHAPES -->
-      <div class="hero-right">
-        <div class="soft-shape shape-1"></div>
-        <div class="soft-shape shape-2"></div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="section-inner">
-        <h2>About</h2>
-        <p>
-          I'm passionate about development and committed to continuous learning and improvement.
-          I bring strong proficiency in Python, HTML, CSS, JavaScript, SQL, and Java.
-          With a problem-solving mindset and teamwork abilities, I aim to contribute effectively
-          to innovative projects and collaborative environments.
-        </p>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="section soft-bg">
-      <div class="grid-3">
-
-        <div class="info-card">
-          <h3>Tech Stack</h3>
-          <p>Python · Java · C · SQL</p>
+      <div class="hero-visual">
+        <div class="code-card">
+          <div class="code-header">
+            <div class="win-dots"><span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span></div>
+            <div class="code-title">saniya.py</div>
+          </div>
+          <div class="code-body">
+            <div class="code-line"><span class="keyword">class</span> <span class="func">CS_Student</span>:</div>
+            <div class="code-line indent-1"><span class="keyword">def</span> <span class="func">__init__</span>(self):</div>
+            <div class="code-line indent-2">self.name = <span class="string">"Saniya Malik"</span></div>
+            <div class="code-line indent-2">self.role = <span class="string">"Aspiring ML Engineer"</span></div>
+            <div class="code-line indent-2">self.institute = <span class="string">"SGBIT, Belgaum"</span></div>
+            <div class="code-line indent-2">self.focus = [<span class="string">"ML"</span>, <span class="string">"AI Systems"</span>, <span class="string">"Web Dev"</span>]</div>
+            <div class="code-line indent-1"><span class="keyword">def</span> <span class="func">introduce</span>(self):</div>
+            <div class="code-line indent-2"><span class="keyword">return</span> <span class="string">"Building intelligent solutions with impact"</span></div>
+            <div class="code-line"><span class="cursor"></span></div>
+          </div>
         </div>
-
-        <div class="info-card">
-          <h3>Web</h3>
-          <p>HTML · CSS · JavaScript · PHP · MySQL</p>
-        </div>
-
-        <div class="info-card">
-          <h3>Tools</h3>
-          <p>Power BI · XAMPP</p>
-        </div>
-
       </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-
-      <div class="projects-grid">
-
-        <article class="project">
-          <h4>Food Delivery Website</h4>
-          <p>Clean frontend with map-based delivery tracking and smooth micro interactions.</p>
-          <div class="tags">Frontend</div>
-        </article>
-
-        <article class="project">
-          <h4>Freelancing Platform</h4>
-          <p>Carefully designed user flows for posting jobs and bidding, focusing on clarity and trust.</p>
-          <div class="tags">Frontend</div>
-        </article>
-
-        <article class="project">
-          <h4>Student Registration System</h4>
-          <p>Secure registrations with clear admin flows, built with PHP & SQL backend and a focused frontend.</p>
-          <div class="tags">Full Stack</div>
-        </article>
-
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER WITH SMALL ICONS -->
-  <footer class="footer">
-
-    <div class="social-icons">
-
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=saniyamalik2507@.com"
-         target="_blank" class="icon">
-        <img src="gmail.png" alt="Email">
-      </a>
-
-      <a href="https://www.linkedin.com/in/saniya-malik-75aa882bb"
-         target="_blank" class="icon">
-        <img src="linkedin.png" alt="LinkedIn">
-      </a>
-
-      <a href="https://github.com/saniya-malik"
-         target="_blank" class="icon">
-        <img src="github.png" alt="GitHub">
-      </a>
-
     </div>
+  </section>
 
-    <p>© <span id="year"></span> Saniya Malik • Designed with focus</p>
+  <!-- About section - Professional -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label">01 / Profile</div>
+      <div class="about-grid">
+        <div class="about-left">
+          <h2>Driven by curiosity, refined by code.</h2>
+        </div>
+        <div class="about-right">
+          <p>I'm Saniya Malik A, a third-year Computer Science and Business Systems student at S.G. Balekundri Institute of Technology, Belgaum. My focus lies at the intersection of machine learning, AI-driven products, and Python development  building intelligent systems that solve real-world problems.</p>
+          <p>I am passionate about building practical solutions that address real-world challenges. Currently exploring advanced ML frameworks to create intelligent, scalable systems.</p>
+          <p>I possess strong analytical, presentation, problem-solving, communication, collaboration, and time management skills. As a quick learner with a passion for emerging technologies, I am eager to gain hands-on experience and grow in dynamic environments where I can contribute meaningfully to AI/ML projects.</p>
+          <div class="education-badge">
+            <p>🎓 S.G. Balekundri Institute of Technology, Belgaum</p>
+            <span>Bachelor of Engineering · CS & Business Systems · 2023–2027</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  </footer>
+  <!-- Skills - Updated with ALL your technologies -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-label">02 / Competencies</div>
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card"><div class="skill-icon">⟨/⟩</div><h3>Languages</h3><div class="skill-pills"><span>Python</span><span>Java</span><span>PHP</span><span>SQL</span><span>JSON</span></div></div>
+        <div class="skill-card"><div class="skill-icon">◈</div><h3>Web Dev</h3><div class="skill-pills"><span>HTML</span> <span>CSS</span><span>JavaScript</span></div></div>
+        <div class="skill-card"><div class="skill-icon">⬡</div><h3>ML & Data</h3><div class="skill-pills"><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>Matplotlib</span></div></div>
+        <div class="skill-card"><div class="skill-icon">◎</div><h3>Tools & Platforms</h3><div class="skill-pills"><span>XAMPP</span><span>Power BI</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects - ACCURATE tags based on your actual technologies -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-label">03 / Projects</div>
+      <h2 class="section-title">Selected work & prototypes</h2>
+      <div class="projects-list">
+        
+        <!-- Project 1: Telemedicine - Full stack with Node.js -->
+        <div class="project-item">
+          <div class="project-left">
+            <div class="proj-num">01</div>
+            <div class="proj-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>REST API</span>
+            </div>
+          </div>
+          <div class="project-mid">
+            <h3>Telemedicine for Rural Healthcare</h3>
+            <p>Developed a Telemedicine application enabling real-time video consultations between doctors and patients. Designed to enhance healthcare accessibility and bridge the medical gap in rural communities. Contributed to both frontend and backend development to ensure smooth user experience and secure data exchange.</p>
+          </div>
+          <div class="proj-arrow">↗</div>
+        </div>
+
+        <!-- Project 2: AI Voice Assistant -->
+        <div class="project-item">
+          <div class="project-left">
+            <div class="proj-num">02</div>
+            <div class="proj-tags">
+              <span>Python</span>
+              <span>Streamlit</span>
+              <span>OpenRouter AI</span>
+              <span>gTTS</span>
+              <span>SQLite</span>
+              <span>SMTP</span>
+            </div>
+          </div>
+          <div class="project-mid">
+            <h3>AI Personal Voice Assistant</h3>
+            <p>Developed an AI-powered voice assistant that supports multilingual voice interaction, task management, reminders, scheduling, email generation, and personalized memory features to enhance user productivity and convenience.</p>
+            <a href="https://github.com/saniya-malik/AI-assistant" target="_blank" class="project-link">Repository →</a>
+          </div>
+          <div class="proj-arrow">↗</div>
+        </div>
+
+        <!-- Project 3: AI Secure Voice Banking (Ongoing - ML based) -->
+        <div class="project-item">
+          <div class="project-left">
+            <div class="proj-num">03</div>
+            <div class="proj-tags">
+              <span>Python</span>
+              <span>Machine Learning</span>
+              <span>Biometrics</span>
+              <span>Voice Recognition</span>
+              <span>Ongoing</span>
+            </div>
+          </div>
+          <div class="project-mid">
+            <h3>AI Secure Voice Banking</h3>
+            <p>(Ongoing) - Developing an AI-powered secure voice banking system leveraging multi-biometric authentication for enhanced security. Integrating machine learning techniques for voice recognition and identity verification in financial transactions.</p>
+          </div>
+          <div class="proj-arrow">↗</div>
+        </div>
+
+        <!-- Project 4: Student Registration System - PHP + MySQL -->
+        <div class="project-item">
+          <div class="project-left">
+            <div class="proj-num">04</div>
+            <div class="proj-tags">
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+              <span>jQuery</span>
+              <span>Bootstrap</span>
+            </div>
+          </div>
+          <div class="project-mid">
+            <h3>Student Registration System</h3>
+            <p>Developed a system that enables efficient student registration and management with organized record handling and secure data storage, helping streamline the registration process for educational institutions.</p>
+          </div>
+          <div class="proj-arrow">↗</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact" class="footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <div class="section-label" style="color:#8ba3c0;">Contact</div>
+      <h3>Let's connect</h3>
+      <a href="mailto:saniyamalik2507@gmail.com" class="footer-email-link">saniyamalik2507@gmail.com →</a>
+    </div>
+    <div class="social-links">
+      <a href="https://github.com/saniya-malik" target="_blank" class="soc-link"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.21.68-.48 0-.24-.01-.88-.01-1.72-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.8-.22 1.65-.33 2.5-.33.85 0 1.7.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.18.58.69.48C19.13 20.17 22 16.42 22 12c0-5.52-4.48-10-10-10z'/%3E%3C/svg%3E"> GitHub</a>
+      <a href="https://www.linkedin.com/in/saniya-malik-75aa882bb" target="_blank" class="soc-link"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3c0-1.8-.7-2.9-2.2-2.9-1 0-1.5.6-1.8 1.2v-1h-2v8h2v-4.5c0-.8.2-1.5 1.1-1.5.8 0 1.1.6 1.1 1.5v4.5h2M7 8.7c.8 0 1.4-.6 1.4-1.4 0-.8-.6-1.4-1.4-1.4-.8 0-1.4.6-1.4 1.4 0 .8.6 1.4 1.4 1.4M6 10h2v8H6v-8z'/%3E%3C/svg%3E"> LinkedIn</a>
+      <a href="mailto:saniyamalik25@gmail.com" class="soc-link"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z'/%3E%3C/svg%3E"> Email</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+  <span>Saniya Malik A</span>
+  <span>© 2025 – CS Student, SGBIT Belgaum</span>
+</div>
+</footer>
 
 </body>
 </html>
